@@ -5,6 +5,11 @@ from PIL import Image
 import plotly.express as px
 import plotly.graph_objects as go
 print("Funcionandoooo")
+#para subir a la nube y que lea el excel
+import pip
+pip.main(["install", "openpyxl"])
+
+
 # reading the data from excel file
 df = pd.read_excel("Agencia.xlsx")
 st.set_page_config(layout="wide")
